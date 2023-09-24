@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>CJ Hines Portfolio</title>
+
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+.slider--images {
+    display: flex; /* Use flexbox to align items horizontally */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+.slider__slide {
+    flex: 0 0 auto; /* Allow the columns to grow, but don't shrink or grow excessively */
+    width: 100%; /* Ensure each column takes up the full width of the container */
+    display: flex; /* Nested flex container for vertically aligning content */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+.image-wrapper {
+    flex: 1; /* Allow the image container to grow and take up equal vertical space */
+    display: flex; /* Nested flex container for centering the image */
+}
+.slider__slide + .slider__slide {
+    margin-left: 0; /* Remove left margin for all but the first column */
+}
+.project-button {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.project-button img {
+    width: 100%;
+    height: auto;
+}
+.hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+.project-button:hover .hover-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.block--where-next .container .row:nth-of-type(1) a.button {
+    position: absolute;
+    bottom: 50px;
+    right: 146px;
+}
+.button--light {
+    background-color: #eae6dd;
+    color: #000;
+}
+.button {
+    display: inline-block;
+    min-width: 270px;
+    padding: 30px 25px;
+    background: #7e7871;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 9px;
+    font-size: .5625rem;
+    line-height: 2.5555555556;
+    letter-spacing: .5px;
+    border-radius: 0;
+    font-family: "Titling Gothic FB Extd Reg",sans-serif;
+    cursor: pointer;
+    -o-transition: .2s all ease-in;
+    transition: .2s all ease-in;
+}
+.ml-20, .mx-20 {
+    margin-left: 20px !important;
+}
+</style>
+<style id='safe-svg-svg-icon-style-inline-css' type='text/css'>
+.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{height:100%;max-height:100%;max-width:100%;width:100%}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='typekit-css-css' href='https://use.typekit.net/jvf1izs.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='typenetwork-css-css' href='//cloud.typenetwork.com/projects/5805/fontface.css/?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css-css' href='https://www.seamirror.com/wp-content/themes/sea-mirror-main/style.css?ver=1660643808' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.seamirror.com/wp-content/themes/sea-mirror-main/assets/js/vendor/modernizr-3.6.0.min.js' id='modernizr-js-js'></script>
+<link rel="https://api.w.org/" href="https://www.seamirror.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.seamirror.com/wp-json/wp/v2/pages/70"/>
+<script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=luozhvoclmgydwkvuqsshq" async="true"></script>
+</head>
+
+<body class="page-template page-template-tpl page-template-tpl-island page-template-tpltpl-island-php page page-id-70">
+	<!-- Google Tag Manager (noscript) 
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M54L38W"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	End Google Tag Manager (noscript) -->
+
+<script>
+	function defer(method) {
+		if (window.jQuery) {
+			method();
+		} else {
+			setTimeout(function() { defer(method) }, 50);
+		}
+	}
+	defer(function () {
+		(function ($){
+
+			$(window).on('load', function() {
+				function getCookie(name) {
+					var dc = document.cookie;
+					var prefix = name + "=";
+					var begin = dc.indexOf("; " + prefix);
+					if (begin == -1) {
+						begin = dc.indexOf(prefix);
+						if (begin != 0) return null;
+					}
+					else
+					{
+						begin += 2;
+						var end = document.cookie.indexOf(";", begin);
+						if (end == -1) {
+						end = dc.length;
+						}
+					}
+					return decodeURI(dc.substring(begin + prefix.length, end));
+				}
+
+
+				let cookie_name                       = "twk_cookies_bar_cookie_86190370289664831";
+				let cookies_notification_cookies_name = getCookie(cookie_name);
+
+				if ( ! cookies_notification_cookies_name ){
+					$( '.notification.cookies-bar' ).fadeIn();
+				}
+
+				// Accepts all cookies.
+				$('.cookies-bar .button-accept').on('click', function(event){
+					event.preventDefault();
+
+					setCookie( cookie_name, 'true', 50000);
+					setCookie( 'twk_cookies_google_analytics', 'true', 50000);  // GA/GTM.
+					setCookie( 'twk_cookies_marketing', 'true', 50000);         // Notifications Popup.
+
+					// Gtag Manager - Fire event.
+					if (typeof dataLayer !== 'undefined') {
+						dataLayer.push({'event': 'twk_cookies_consent_given'});
+						dataLayer.push({'cookie_consent': 'true'});
+					}
+
+					$( ".notification.cookies-bar" ).fadeTo("slow", 0, function(){
+						$(".notification.cookies-bar").css('pointer-events', 'none');
+					});
+
+				});
+
+				function setCookie(cname, cvalue, exdays) {
+					var d = new Date();
+					d.setTime(d.getTime() + (exdays*24*60*60*1000));
+					var expires = "expires="+ d.toUTCString();
+
+					if ( exdays == 0 ){
+						document.cookie = cname + "=" + cvalue + ";path=/";
+					} else {
+						document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+					}
+				}
+
+			});
+
+		})(jQuery);
+	});
+</script>
+
+<script>
+	function defer(method) {
+		if (window.jQuery) {
+			method();
+		} else {
+			setTimeout(function() { defer(method) }, 50);
+		}
+	}
+	defer(function () {
+		(function ($){
+
+			$(window).on('load', function() {
+				function getCookie(name) {
+					var dc = document.cookie;
+					var prefix = name + "=";
+					var begin = dc.indexOf("; " + prefix);
+					if (begin == -1) {
+						begin = dc.indexOf(prefix);
+						if (begin != 0) return null;
+					}
+					else
+					{
+						begin += 2;
+						var end = document.cookie.indexOf(";", begin);
+						if (end == -1) {
+						end = dc.length;
+						}
+					}
+					return decodeURI(dc.substring(begin + prefix.length, end));
+				}
+
+
+				let cookie_name                       = "twk_cookies_popup_44019789531268706";
+				let popup_notification_cookies_name   = getCookie(cookie_name);				 // Checks if the message was already displayed and closed.
+				let twk_cookies_marketing             = getCookie('twk_cookies_marketing');  // Checks if the user accepted "Marketing" cookies.
+				let cookie_expire                     = "";
+
+
+				if ( ! popup_notification_cookies_name && twk_cookies_marketing ){
+					$( '.notification.popup' ).fadeIn();
+				}
+				// When they user accepted the cookies.
+				$('.cookies-bar .button-accept').on('click', function(){
+					$( '.notification.popup' ).fadeIn();
+				});
+
+				// Accepts cookies.
+				$('.notification.popup .close-button').on('click', function(event){
+					event.preventDefault();
+
+					setCookie( cookie_name, 'true', cookie_expire);
+
+					$( ".notification.popup" ).fadeTo("slow", 0, function(){
+						$(".notification.popup").css('pointer-events', 'none');
+					});
+
+				});
+				// Accepts cookies and go to link.
+				$('.notification.popup .button').on('click', function(event){
+					event.preventDefault();
+
+					setCookie( cookie_name, 'true', cookie_expire);
+
+					window.location = $(this).attr("href");
+
+				});
+
+				function setCookie(cname, cvalue, exdays) {
+					var d = new Date();
+					d.setTime(d.getTime() + (exdays*24*60*60*1000));
+					var expires = "expires="+ d.toUTCString();
+
+					if ( exdays == 0 ){
+						document.cookie = cname + "=" + cvalue + ";path=/";
+					} else {
+						document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+					}
+				}
+
+			});
+
+		})(jQuery);
+	});
+</script>
+
+
+
+
+
+<div id="page-wrap">
+	<div class="js-scroll-container">
+
+			
+<header class="top-nav__header" data-scroll data-scroll-sticky data-scroll-target=".js-scroll-container" data-scroll-position="top">
+    <div class="top-nav__logo">
+        <a href="https://www.seamirror.com">
+                <svg width="277px" height="13px" viewBox="0 0 277 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <g id="full-site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-51.000000, -80.000000)">
+            <g transform="translate(51.000000, 80.000000)">
+                <g id="sea">
+                	<path d="M 52.337 17.224 A 20.134 20.134 0 0 0 52.452 15.866 Q 52.643 14.461 51.934 13.4 A 4.112 4.112 0 0 0 51.027 12.446 A 8.41 8.41 0 0 0 50.405 11.994 A 9.671 9.671 0 0 0 48.842 11.163 A 4.644 4.644 0 0 0 48.068 10.914 Q 47.416 10.764 46.674 10.782 A 7.287 7.287 0 0 0 45.992 10.831 A 2.22 2.22 0 0 0 45.962 10.831 Q 45.423 10.838 45.236 11.109 A 0.493 0.493 0 0 0 45.232 11.116 Q 45.137 11.211 45.137 11.306 L 45.137 11.401 A 0.514 0.514 0 0 1 45.135 11.445 Q 45.127 11.536 45.089 11.686 A 2.768 2.768 0 0 0 45.07 11.766 Q 45.052 11.85 45.046 11.91 A 0.565 0.565 0 0 0 45.042 11.971 A 85.309 85.309 0 0 0 44.681 13.754 Q 44.498 14.706 44.311 15.778 A 177.171 177.171 0 0 0 43.854 18.526 A 1750.255 1750.255 0 0 1 43.213 22.539 A 2082.032 2082.032 0 0 1 42.524 26.791 Q 41.812 31.161 40.909 35.293 Q 40.007 39.426 38.962 42.703 Q 38.276 44.854 37.468 46.289 A 9.014 9.014 0 0 1 36.587 47.596 Q 34.782 49.876 31.979 51.063 Q 29.177 52.251 26.327 53.676 A 1.878 1.878 0 0 0 26.283 53.702 Q 25.659 54.081 25.567 54.816 A 1.856 1.856 0 0 0 25.564 54.843 Q 25.482 55.584 26.042 56.051 Q 28.227 57.571 30.744 58.046 A 9.174 9.174 0 0 0 32.449 58.204 Q 33.125 58.204 33.818 58.107 A 11.713 11.713 0 0 0 36.017 57.571 Q 40.482 56.241 43.237 52.726 A 5.727 5.727 0 0 0 43.572 52.268 Q 44.284 51.195 45.089 49.163 Q 46.087 46.646 47.037 43.321 Q 47.987 39.996 48.794 36.623 Q 49.602 33.251 50.172 30.496 Q 50.582 28.515 50.746 27.222 A 15.398 15.398 0 0 0 50.837 26.316 A 29.08 29.08 0 0 1 50.964 25.144 Q 51.196 23.334 51.692 20.996 A 63.246 63.246 0 0 0 51.721 20.857 Q 52.155 18.788 52.337 17.224 Z M 25.733 15.349 A 2.258 2.258 0 0 0 25.567 14.916 Q 24.617 13.016 22.527 12.113 Q 20.437 11.211 17.967 10.451 A 3.789 3.789 0 0 0 16.459 10.14 Q 16.23 10.14 15.996 10.166 A 4.754 4.754 0 0 0 15.117 10.356 A 157.253 157.253 0 0 0 14.06 10.552 A 180.741 180.741 0 0 0 10.747 11.211 Q 8.467 11.686 6.567 12.731 A 3.59 3.59 0 0 0 5.759 13.229 A 4.509 4.509 0 0 0 5.047 13.966 A 65.982 65.982 0 0 1 4.691 14.343 A 59.707 59.707 0 0 1 2.197 16.816 A 6.013 6.013 0 0 0 0.951 18.47 A 7.529 7.529 0 0 0 0.297 20.331 Q -0.178 22.421 0.107 24.653 A 84.669 84.669 0 0 1 0.248 25.82 A 97.875 97.875 0 0 1 0.582 29.356 A 22.925 22.925 0 0 1 0.696 29.707 A 19.637 19.637 0 0 1 0.914 30.448 Q 1.057 30.971 1.342 31.446 A 24.176 24.176 0 0 0 2.258 32.877 A 28.723 28.723 0 0 0 4.382 35.578 A 8.416 8.416 0 0 0 5.169 36.362 A 6.221 6.221 0 0 0 8.562 37.906 A 3.274 3.274 0 0 1 8.858 37.919 Q 9.503 37.978 10.272 38.286 A 0.164 0.164 0 0 0 10.317 38.316 Q 10.417 38.365 10.665 38.377 A 3.68 3.68 0 0 0 10.842 38.381 Q 11.222 38.476 11.554 38.523 A 5.035 5.035 0 0 0 11.836 38.556 A 3.935 3.935 0 0 0 12.172 38.571 Q 14.927 38.476 17.587 38.048 A 12.665 12.665 0 0 0 18.561 37.853 A 10.531 10.531 0 0 0 22.242 36.196 Q 24.047 34.676 23.287 32.681 A 8.179 8.179 0 0 0 23.258 32.568 Q 23.128 32.08 22.999 31.856 A 0.61 0.61 0 0 0 22.907 31.731 A 2.832 2.832 0 0 0 22.857 31.614 A 2.117 2.117 0 0 0 21.624 30.448 Q 21.12 30.262 20.631 30.299 A 2.292 2.292 0 0 0 19.867 30.496 A 56.251 56.251 0 0 1 19.784 30.531 A 61.513 61.513 0 0 1 18.489 31.066 Q 17.952 31.28 17.658 31.387 A 6.722 6.722 0 0 1 17.492 31.446 Q 15.877 31.826 13.929 31.873 A 53.03 53.03 0 0 1 12.636 31.889 A 51.147 51.147 0 0 1 10.082 31.826 A 4.41 4.41 0 0 1 9.682 31.773 Q 7.825 31.438 7.137 29.546 A 8.162 8.162 0 0 1 6.745 27.043 Q 6.745 26.8 6.759 26.555 A 9.286 9.286 0 0 1 7.089 24.606 Q 7.802 22.041 9.797 20.093 Q 11.792 18.146 14.642 17.576 A 10.091 10.091 0 0 1 17.099 17.278 Q 17.325 17.278 17.555 17.288 A 12.216 12.216 0 0 1 19.487 17.528 Q 21.316 17.901 22.856 17.863 A 10.207 10.207 0 0 0 24.047 17.766 A 2.169 2.169 0 0 0 24.913 17.393 A 2.311 2.311 0 0 0 25.519 16.721 Q 25.921 16.063 25.733 15.349 Z M 55.295 3.144 A 2.036 2.036 0 0 0 54.827 2.566 Q 53.307 1.046 51.407 0.523 Q 50.338 0.229 49.089 0.101 A 20.063 20.063 0 0 0 47.037 0.001 Q 46.087 0.001 45.422 0.618 A 1.995 1.995 0 0 0 44.85 1.557 A 2.66 2.66 0 0 0 44.757 2.281 Q 44.742 2.577 44.75 2.865 A 6.052 6.052 0 0 0 45.517 5.701 A 3.237 3.237 0 0 0 46.463 6.741 Q 47.388 7.409 48.937 7.696 Q 50.552 7.791 52.072 7.411 Q 53.592 7.031 54.637 6.081 A 3.997 3.997 0 0 0 54.966 5.658 A 3.049 3.049 0 0 0 55.492 4.228 A 2.294 2.294 0 0 0 55.502 4.011 Q 55.502 3.537 55.295 3.144 Z" vector-effect="non-scaling-stroke"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>                
+</a>
+</div>
+</header>
+
+<div class="top-nav__button" data-scroll data-scroll-sticky data-scroll-target=".js-scroll-container" data-scroll-position="top">
+    <button class="button--hamburger  js-menu-trigger" title="Open Menu" aria-label="Open Menu">
+        <div class="button--hamburger__icon">
+            <span class="button--hamburger__line"></span>
+            <span class="button--hamburger__line"></span>
+            <span class="button--hamburger__line"></span>
+        </div>
+        <p class="mb-0">Menu</p>
+    </button>
+</div>
+<nav class="top-nav__menu js-menu" data-scroll data-scroll-sticky data-scroll-target=".js-scroll-container" data-scroll-position="top">
+    <div class="top-nav__menu-background"></div>
+    <div class="top-nav__images d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="top-nav__images-container">
+
+                    	<!--home-->  
+                        <div class="image" data-id="65">
+                            <img role="presentation" src="https://www.seamirror.com/wp-content/uploads/2021/09/100_SecchiSmith_LAMAR_MK_04_View-05_Entrance-B_210818-2100x1500.jpg" alt="" srcset="https://www.seamirror.com/wp-content/uploads/2021/09/100_SecchiSmith_LAMAR_MK_04_View-05_Entrance-B_210818-2100x1500.jpg 2100w, https://www.seamirror.com/wp-content/uploads/2021/09/100_SecchiSmith_LAMAR_MK_04_View-05_Entrance-B_210818-640x457.jpg 640w, https://www.seamirror.com/wp-content/uploads/2021/09/100_SecchiSmith_LAMAR_MK_04_View-05_Entrance-B_210818-400x286.jpg 400w, https://www.seamirror.com/wp-content/uploads/2021/09/100_SecchiSmith_LAMAR_MK_04_View-05_Entrance-B_210818-1280x914.jpg 1280w" sizes="(max-width: 2100px) 100vw, 2100px" class=""/>
+                        </div>
+
+                        <!--projects-->             
+                        <div class="image" data-id="70">
+                            <img role="presentation" src="https://www.seamirror.com/wp-content/uploads/2021/10/NEW_DRONE_SHOT_RGB-02.jpg" alt="" srcset="https://www.seamirror.com/wp-content/uploads/2021/10/NEW_DRONE_SHOT_RGB-02.jpg 1800w, https://www.seamirror.com/wp-content/uploads/2021/10/NEW_DRONE_SHOT_RGB-02-640x483.jpg 640w, https://www.seamirror.com/wp-content/uploads/2021/10/NEW_DRONE_SHOT_RGB-02-400x302.jpg 400w, https://www.seamirror.com/wp-content/uploads/2021/10/NEW_DRONE_SHOT_RGB-02-1280x966.jpg 1280w" sizes="(max-width: 1800px) 100vw, 1800px" class=""/>
+                        </div>
+
+                        <!--resume-->                 
+                        <div class="image" data-id="73">
+                            <img role="presentation" src="https://www.seamirror.com/wp-content/uploads/2021/08/detail4.jpg" alt="" srcset="https://www.seamirror.com/wp-content/uploads/2021/08/detail4.jpg 1904w, https://www.seamirror.com/wp-content/uploads/2021/08/detail4-640x529.jpg 640w, https://www.seamirror.com/wp-content/uploads/2021/08/detail4-400x331.jpg 400w, https://www.seamirror.com/wp-content/uploads/2021/08/detail4-1280x1058.jpg 1280w" sizes="(max-width: 1904px) 100vw, 1904px" class=""/>
+                        </div>
+
+                        <!--contact-->
+                        <div class="image" data-id="83">
+                            <img role="presentation" src="https://www.seamirror.com/wp-content/uploads/2021/08/island-hover.jpg" alt="" srcset="https://www.seamirror.com/wp-content/uploads/2021/08/island-hover.jpg 1718w, https://www.seamirror.com/wp-content/uploads/2021/08/island-hover-640x484.jpg 640w, https://www.seamirror.com/wp-content/uploads/2021/08/island-hover-400x303.jpg 400w, https://www.seamirror.com/wp-content/uploads/2021/08/island-hover-1280x969.jpg 1280w" sizes="(max-width: 1718px) 100vw, 1718px" class=""/>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-nav__container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="main-menu-container"><ul id="menu-main" class="menu"><div class="row mb-0 mb-md-100"><div class="col-2 col-md-1 d-flex justify-content-md-end"><p class="count pr-5 mb-0">01</p></div>
+                    	<div class="col-10 col-md-5 mb-20 mb-md-0"><li id="menu-item-324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-324"><a href="https://www.seamirror.com/design/" data-id="65">Home</a></li></div>
+                    	<div class="col-2 col-md-1 d-flex justify-content-md-end">
+                    <p class="count pr-5 mb-0">02</p></div>
+                    	<div class="col-10 col-md-5 mb-20 mb-md-0"><li id="menu-item-323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="https://www.seamirror.com/island/" data-id="70">Projects</a></li></div></div>
+                    	<div class="row "><div class="col-2 col-md-1 d-flex justify-content-md-end">
+                   	<p class="count pr-5 mb-0">03</p></div>
+                    	<div class="col-10 col-md-5 mb-20 mb-md-0"><li id="menu-item-322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-322"><a href="https://www.seamirror.com/villas/" data-id="73">Resume</a></li></div>
+                    	<div class="col-2 col-md-1 d-flex justify-content-md-end">
+                   	<p class="count pr-5 mb-0">04</p></div>
+                    	<div class="col-10 col-md-5 "><li id="menu-item-321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321"><a href="https://www.seamirror.com/contact/" data-id="83">Contact</a></li></div></ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-nav__bottom">
+        <div class="container">
+            <div class="row">
+                <div class="pr-sm-50 pl-md-0 col-lg-12 d-flex justify-content-start justify-content-md-end align-items-center">
+                    <div class="bottom-menu-container"><ul id="menu-bottom-menu" class="menu">
+                    	<li id="menu-item-403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-403"><a href="https://www.seamirror.com/">Home</a></li>
+                    	<li id="menu-item-348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-348"><a href="https://www.seamirror.com/about/">About</a></li></ul>
+                    </div>
+
+                    <div class="d-flex pl-15 pl-sm-35">
+						<!--ig-->
+						<a href="https://www.instagram.com/cj.hines/" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 24 24">
+								<path d="M 3 3 L 3 21 L 21 21 L 21 3 L 3 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
+							</svg>
+						</a>
+
+						<!--linkedin-->
+						<a href="https://www.instagram.com/seamirrorlife/" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 24 24">
+								<path d="M21,3H3v18h18V3z M9,17H6.477v-7H9V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2 c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302 s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977C13.93,10.407,14.581,10,15.802,10 C17.023,10,18,10.977,18,13.174V17z"></path>
+							</svg>
+						</a>
+					</div>
+
+
+				</div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<a class="skip-link sr-only" href="#content-wrap">Skip to content</a>
+
+<div id="content-wrap">
+	<section class="banner banner--island">
+			<div class="banner__left pb-70">
+				<a class="js-scroll-to" data-scroll-to="#strip_2_content">
+					<svg width="26px" height="14px" viewBox="0 0 26 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g id="Full-Site-V5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+							<g id="Home-1" transform="translate(-67.000000, -816.000000)" stroke="#000000">
+								<g id="Group-5" transform="translate(68.017567, 817.017567)">
+									<line x1="6.32557878" y1="-2.07191628" x2="6.09273156" y2="14.4902266" id="Line" transform="translate(6.209155, 6.209155) rotate(-45.000000) translate(-6.209155, -6.209155) "></line>
+									<line x1="17.8721345" y1="-2.07191628" x2="17.6392873" y2="14.4902266" id="Line-Copy" transform="translate(17.755711, 6.209155) scale(-1, 1) rotate(-45.000000) translate(-17.755711, -6.209155) "></line>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+		</section>
+
+		<main class="main" id="main">
+			<div class="banner-wrapper">
+
+				<!-- STRIP 1 -->
+				
+				<section class="quote quote--1 pt-0 pt-md-0 pt-xl-215 mb-30 mb-md-0 mb-lg-95">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-5 offset-lg-4">
+								<blockquote class="title title--3xs">
+
+									<p>Filipino-Korean multidisciplinary engineer currently based all over the world. Graduated from UC Berkeley with degrees in Computer Science and Economics.</p>
+									
+										<cite class="label label--"> some coursework completed at kcl and pembroke college, cambridge :)</cite>
+
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section class="image-grid image-grid--1 pt-180 pt-md-200 pt-xl-0 mb-70 mb-xl-200 -overflow-x-hidden">
+					<div class="container">
+						<div class="row justify-content-center align-items-center">
+							
+								<div class="col-lg-10 offset-lg-2">
+								<h1 class="label mb-15">hello and welcome. aside from being a huge hockey fan, i'm also a...</h1>
+
+									<h2 class="title title--lg mb-0"> Software Engineer<br> and Developer.</h2> 
+								</div>
+
+							<!-- 3-5 slider pics -->
+		
+							<div class="col-xl-12 mt-n15 mt-md-n25 mt-xl-n50">
+								<div class="slider slider--images">
+
+										<div class="slider__slide">
+											<div class="image-wrapper">
+												<img role="img" src="images/ceejee.jpg" alt="stock1" height="1000px" sizes="(max-width: 2000px) 100vw, 543px" class="" />
+											</div>
+										</div>
+
+										<div class="slider__slide">
+											<div class="image-wrapper">
+												<img role="img" src="images/ceejee.jpg" alt="stockholm :D" height="1000px" sizes="(max-width: 2000px) 100vw, 2000px" class="" />
+											</div>
+										</div>
+
+										<div class="slider__slide">
+											<div class="image-wrapper">
+												<img role="img" src="images/ceejee.jpg" alt="stock3" height="1000px" sizes="(max-width: 2000px) 100vw, 2000px" class="" />
+											</div>
+										</div>
+
+									
+										<div class="slider__slide">
+											<div class="image-wrapper">
+												<img role="img" src="images/ceejee.jpg" alt="stockholmy" height="1000px" sizes="(max-width: 2000px) 100vw, 2000px" class="" />
+											</div>
+										</div>
+
+										<div class="slider__slide">
+											<div class="image-wrapper">
+												<img role="img" src="images/ceejee.jpg" alt="stockholmy" height="1000px" sizes="(max-width: 2000px) 100vw, 2000px" class="" />
+											</div>
+										</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- STRIP 2 -->
+			
+<section class="block block--content my-40 my-md-100 my-xl-200" id="strip_2_content">
+	<div class="container">
+
+		
+			<div class="row mb-20 mb-lg-40 mb-xl-70">
+				<div class="col-md-10 col-lg-8 offset-lg-1">
+					<h2 class="title title--xs pr-40">Hiya I'm CJ Hines</h2>
+				</div>
+			</div>
+
+		
+		<div class="row">
+			<div class="col-lg-10 col-xl-9 offset-lg-1 offset-xl-2">
+				<div class="columns">
+
+					<p> I was born in the Philippines and raised in San Diego, CA. I'm passionate about exploring the seemingly limitless applications of computer science in 
+						solving problems all over the world.
+
+						I am interested
+
+						My professional background is in solar energy, working as a developer at Nextracker and Energport. 
+					Sea Mirror offers 18 uniquely designed concept homes nestled on Jumeira Bay Island. Each property opens towards an uninterrupted view of the Arabian Sea and Dubai’s magnificent skyline. As the only private developer on the island residents have exclusive access to the island’s neighbouring Bvlgari hotel. This includes the private beach club, expansive spa facilities, world-class restaurants and bars, a 46-boat luxury marina and the member’s only yacht club.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>			<!-- 
+
+<section class="block--image-grid my-70 my-xl-200 overflow-hidden" id="strip_3_image_grid">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+            
+                <div class="mb-30 mb-md-0 col-md-12">
+
+                	<div class="row mb-20 mb-lg-40 mb-xl-70">
+            		<div class="col-md-10 col-lg-8 offset-lg-1">
+					<h2 class="title title--xs pr-40">Projects</h2>
+				</div>
+			</div>
+
+                    <img role="presentation" src="https://www.seamirror.com/wp-content/uploads/2021/09/jakob-owens-EwRM05V0VSI-unsplash-2-scaled.jpg" alt="" srcset="https://www.seamirror.com/wp-content/uploads/2021/09/jakob-owens-EwRM05V0VSI-unsplash-2-scaled.jpg 2560w, https://www.seamirror.com/wp-content/uploads/2021/09/jakob-owens-EwRM05V0VSI-unsplash-2-640x263.jpg 640w, https://www.seamirror.com/wp-content/uploads/2021/09/jakob-owens-EwRM05V0VSI-unsplash-2-400x165.jpg 400w, https://www.seamirror.com/wp-content/uploads/2021/09/jakob-owens-EwRM05V0VSI-unsplash-2-1280x526.jpg 1280w" sizes="(max-width: 2560px) 100vw, 2560px" class="" />        
+                    	<a href="https://www.seamirror.com/homes/" class="button button--light ml-20">View the villas</a>            
+                </div>
+
+            
+		</div>
+	</div>
+</section>	STRIP 3 -->		<!-- STRIP 4 -->
+			
+<section class="block block--map mt-70 mt-xl-200 mb-70">
+    <div class="container">
+        <div class="row">
+        	<div class="col-lg-11 offset-lg-1">
+        		<h2 class="title title--2xl mb-0">Projects</h2>
+        	</div>
+            
+             <!-- clickable image buttons -->
+            <div class="col-lg-4 mt-n35 mt-md-n70 mt-xl-n90">
+                <div class="project-button" id="button1">
+                	<img src="images/ceejee.jpg" alt="Project 1">
+                	<div class="hover-content">
+                        <p>Hovered Text or Image 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-n35 mt-md-n70 mt-xl-n90">
+                <div class="project-button" id="button2">
+                    <img src="images/ceejee.jpg" alt="Project 2">
+                    <div class="hover-content">
+                        <p>Hovered Text or Image 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-n35 mt-md-n70 mt-xl-n90">
+                <div class="project-button" id="button3">
+                    <img src="images/ceejee.jpg" alt="Project 3">
+                    <div class="hover-content">
+                        <p>Hovered Text or Image 3</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section class="block block--where-next background-dark-grey pt-165">
+	<div class="container p-relative">
+		<div class="row justify-content-end">
+			<div class="col-md-10">
+				<img role="presentation" src="https://www.seamirror.com/wp-content/uploads/2021/08/homes-teaser@2x.jpg" alt="" srcset="https://www.seamirror.com/wp-content/uploads/2021/08/homes-teaser@2x.jpg 2000w, https://www.seamirror.com/wp-content/uploads/2021/08/homes-teaser@2x-640x383.jpg 640w, https://www.seamirror.com/wp-content/uploads/2021/08/homes-teaser@2x-400x240.jpg 400w, https://www.seamirror.com/wp-content/uploads/2021/08/homes-teaser@2x-1280x767.jpg 1280w" sizes="(max-width: 2000px) 100vw, 2000px" class="pr-80" />
+				<a href="https://www.google.com" class="button button--light ml-20"> pdf (paper document foryou) </a>
+			</div>
+		</div>
+		<div class="row align-items-center floating-y">
+			<div class="col-md-9">
+				<h2 class="title title--xl color-white pl-70 pr-70" data-split-text>Here is my <br>resume on ancient scroll</h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
+
+	<!-- END DIV MAIN CONTENT -->
+
+		<footer class="site-footer background-dark-grey pb-60 pt-165">
+			<div class="container">
+				
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-10 col-xl-8 footer-menu">
+						<div class="title title--lg"> click click </div>
+							<ul class="where-next-menu">
+								<li><a href="https://www.seamirror.com/" target="_self" class="">Home</a></li>
+								<li><a href="https://www.seamirror.com/design/" target="_self" class="">Projects</a></li>
+								<li><a href="https://www.seamirror.com/island/" target="_self" class="">Resume</a></li>
+								<li><a href="https://www.seamirror.com/about/" target="_self" class="">About</a></li>
+								<li><a href="https://www.seamirror.com/contact/" target="_self" class="">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="row flex-column flex-md-row justify-content-center align-items-center mt-40 mt-md-115 mt-lg-165">
+						<div class="col col-md-6 col-lg text-center text-xl-left">&copy; CJ Hines 2002</div>
+
+						<div class="col-md col-lg-none text-center order-3 order-lg-2">
+							<img src="images/butt-logo.png" class="site-footer__logo">
+						</div>
+
+						<div class="col col-md-6 col-lg text-center text-xl-right order-2 order-lg-3">
+							<!--<ul id="menu-legal" class="menu"><li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-13"><a rel="privacy-policy" href="https://www.seamirror.com/privacy-policy/"> Privacy, cookies, usage policies </a></li> </ul>-->
+
+							<div class="d-none d-md-inline-flex pl-15 pl-lg-35">
+								<!--ig-->
+								<a href="https://www.instagram.com/seamirrorlife/" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 24 24" style="fill:#FFFFFF;">
+										<path d="M 3 3 L 3 21 L 21 21 L 21 3 L 3 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
+									</svg>
+								</a>
+
+								<!--linkedin-->
+								<a href="https://www.instagram.com/seamirrorlife/" target="_blank">
+									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 24 24" style="fill:#FFFFFF;">
+										<path d="M21,3H3v18h18V3z M9,17H6.477v-7H9V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2 c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302 s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977C13.93,10.407,14.581,10,15.802,10 C17.023,10,18,10.977,18,13.174V17z"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</footer>
+	</div>
+</div>
+</div>
+
+<!-- JS ARE LOADED HERE WITH FUNCTION.PHP -->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js' id='jquery-js'></script>
+<script type='text/javascript' src='https://www.seamirror.com/wp-content/themes/sea-mirror-main/assets/js/vendor/jquery.magnific-popup.min.js' id='magnific-js-js'></script>
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA8T-mOdG5Ig9ARLUhGARRpB9PwZymxlwQ' id='googlemaps-js-js'></script>
+<script type='text/javascript' src='https://www.seamirror.com/wp-content/themes/sea-mirror-main/assets/js/bundle.js' id='script-js-js'></script>
+
+</body>
+
+</html>
+
