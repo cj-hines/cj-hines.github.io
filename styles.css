@@ -17715,11 +17715,9 @@ a:hover {
 }
 
 .label {
-    font-size: 9px;
-    font-size: .5625rem;
+    font-size: 5px;
     line-height: 1.4444444444;
     text-transform: uppercase;
-    letter-spacing: .25px;
     font-family: "Titling Gothic FB Extd Reg",sans-serif
 }
 
