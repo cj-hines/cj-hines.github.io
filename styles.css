@@ -17558,7 +17558,7 @@ a:hover {
 }
 
 .site-footer .footer-menu .where-next-menu li {
-    font-family: "Titling Gothic FB Extd Reg",sans-serif;
+    font-family: 'Nimbus Sans L', sans-serif;
     font-size: 12px;
     font-size: .75rem;
     line-height: 1;
@@ -17703,11 +17703,11 @@ a:hover {
 }
 
 .text {
-    font-family: "Titling Gothic FB Extd Reg",sans-serif
+    font-family: 'Nimbus Sans L', sans-serif;
 }
 
 .font-sans {
-    font-family: "Titling Gothic FB Extd Reg",sans-serif !important
+    font-family: 'Nimbus Sans L', sans-serif;
 }
 
 .font-serif {
@@ -17715,10 +17715,11 @@ a:hover {
 }
 
 .label {
-    font-size: 5px;
+    font-size: 9px;
+    font-size: .5625rem;
     line-height: 1.4444444444;
     text-transform: uppercase;
-    font-family: "Titling Gothic FB Extd Reg",sans-serif
+    letter-spacing: .25px;
 }
 
 .label--sm {
@@ -17802,7 +17803,7 @@ a.post-edit-link {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-family: "Titling Gothic FB Extd Reg",sans-serif;
+    font-family: 'Nimbus Sans L', sans-serif;
     font-size: 9px;
     font-size: .5625rem;
     line-height: 1.4444444444;
@@ -17876,7 +17877,7 @@ p,ul,ol,li {
     line-height: 1.4444444444;
     text-transform: uppercase;
     letter-spacing: .25px;
-    font-family: "Titling Gothic FB Extd Reg",sans-serif;
+    font-family: 'Nimbus Sans L', sans-serif;
     font-style: normal;
     display: block;
     margin-top: 30px
@@ -18135,7 +18136,7 @@ img {
     line-height: 2.5555555556;
     letter-spacing: .5px;
     border-radius: 0;
-    font-family: "Titling Gothic FB Extd Reg",sans-serif;
+    font-family: 'Nimbus Sans L', sans-serif;
     cursor: pointer;
     -webkit-transition: .2s all ease-in;
     -o-transition: .2s all ease-in;
@@ -18241,7 +18242,7 @@ img {
 }
 
 .button--hamburger p {
-    font-family: "Titling Gothic FB Extd Reg",sans-serif;
+    font-family: 'Nimbus Sans L', sans-serif;
     font-size: 8px;
     font-size: .5rem;
     line-height: 1.625;
